@@ -315,6 +315,8 @@
     ModelCache: ModelCache,
     StorageAdapter: StorageAdapter
   });
+                               
+  Backbone.UniqueModel = UniqueModel;
 
   return UniqueModel;
 

@@ -3,7 +3,7 @@
   "description": "Backbone.UniqueModel ensures unique model instances across your application.",
   "homepage": "https://github.com/disqus/backbone.uniquemodel",
   "main": "./backbone.uniquemodel.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "backbone",
     "localStorage",
