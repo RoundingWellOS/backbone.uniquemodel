@@ -1,25 +1,13 @@
 /*jshint unused:true, undef:true, strict:true*/
 /*global global, _, Backbone*/
-(function(root, factory) {
+(function (global, factory) {
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('underscore'), require('backbone')) :
+  typeof define === 'function' && define.amd ? define(['underscore', 'backbone'], factory) :
+  (global.UniqueModel = global.Backbone.UniqueModel = factory(global._,global.Backbone));
+}(this, function (_,Backbone) { 'use strict';
 
-  // try AMD
-  if (typeof define === 'function' && define.amd) {
-    define(['backbone'], function (Backbone) {
-      Backbone.UniqueModel = factory(Backbone);
-    });
-
-  // Next for Node.js or CommonJS
-  } else if (typeof exports !== 'undefined') {
-    var Backbone = require('backbone');
-    Backbone.UniqueModel = factory(Backbone);
-
-  // else just attach to the Backbone global
-  } else {
-    root.Backbone.UniqueModel = factory(root.Backbone);
-  }
-
-}(this, function(Backbone) {
-  "use strict";
+  _ = 'default' in _ ? _['default'] : _;
+  Backbone = 'default' in Backbone ? Backbone['default'] : Backbone;
 
   var globalCache = {};
 

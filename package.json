@@ -1,9 +1,9 @@
 {
-  "name": "backbone.uniquemodel",
+  "name": "rwell-backbone.uniquemodel",
   "description": "Backbone.UniqueModel ensures unique model instances across your application.",
   "homepage": "https://github.com/disqus/backbone.uniquemodel",
   "main": "./backbone.uniquemodel.js",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "keywords": [
     "backbone",
     "localStorage",
@@ -26,8 +26,8 @@
     "url": "https://github.com/disqus/backbone.uniquemodel.git"
   },
   "github": "https://github.com/disqus/backbone.uniquemodel/",
-  "dependencies": {
-    "backbone": "1.0.0 - 1.1.2",
-    "underscore": "1.4.4 - 1.6.0"
+  "peerDependencies": {
+    "backbone": "^1.3.3",
+    "underscore": "^1.8.3"
   }
 }
